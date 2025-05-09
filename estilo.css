@@ -1,6 +1,6 @@
 :root {
 --cor-fundo: #fff;
---cor-fundo-caixa: rgb(109,109,109);
+--cor-fundo-caixa: rgb(133, 200, 231);
 --sombra-caixa: 0px 2px 10px rgba(0,0,0,0.8);
 }
 
@@ -38,6 +38,7 @@ input[type="checkbox"] {
   padding: 20px;
   width: 350px;
   max-width: 100%;
+  
 }
 
 .container-resultado {
@@ -51,6 +52,8 @@ input[type="checkbox"] {
   padding: 12px 10px;
   height: 50px;
   width: 100%;
+  border-radius: 30px;
+
 }
 
 .container-resultado #resultado {
@@ -65,6 +68,8 @@ input[type="checkbox"] {
   top: 5px;
   right: 5px;
   height: 40px;
+  border-radius: 30px;
+
 }
 
 .botao {
@@ -80,7 +85,9 @@ input[type="checkbox"] {
 .botao-largo {
   display: block;
   width: 100%;
+  border-radius: 50px;
 }
+
 
 .configuracao {
   display: flex;
