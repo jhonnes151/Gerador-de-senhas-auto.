@@ -29,7 +29,7 @@ function gerarSimboloAleatorio() {
    return simbolos [Math.floor(Math.random() * simbolos.length)];
 }
 
-const funçaoAleatoria = {
+const funcaoAleatoria = {
   minuscula: gerarMinusculaAleatorio,
   maiuscula: gerarMaiusculaAleatorio,
   numero: gerarNumeroAleatorio,
@@ -77,12 +77,13 @@ botaoGerar.addEventListener("click", () => {
 
 const comprimento_senha = Number(elementoComprimento.value);
 
-const possuiMinuscula = elementoMinuscula.Checked;
-const possuiMaiuscula = elementoMaiuscula.Checked;
-const possuiNumero = elementoNumero.Checked;
-const possuiSimbolo = elementoSimbolo.Checked;
+const possuiMinuscula = elementoMinuscula.checked;
+const possuiMaiuscula = elementoMaiuscula.checked;
+const possuiNumero = elementoNumero.checked;
+const possuiSimbolo = elementoSimbolo.checked;
 
 elementoResultado.innerText = gerarSenhaAleatoria(possuiMinuscula, possuiMaiuscula, possuiNumero, possuiSimbolo, comprimento_senha);
+
 
 })
 
